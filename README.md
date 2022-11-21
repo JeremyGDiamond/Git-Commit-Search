@@ -3,6 +3,10 @@ Find the commit that is most like a local copy of a git repo. Used to resync the
 
 ## Motivation
 
+At one point, I was tasked with replicating the modifications another dev made to a large open-source project before leaving the company. Instead of cloning the repo this dev downloaded the zip file of the project and I had no idea what he had changed. He could have used any version of the project over months of the previous year. I had to make a way to search every version of the project.
+
+These scripts allow you to diff every file in every commit on a branch of a project against an orphaned directory and get a total of the number of differences for a given hash in a CSV file diffsPerCommit.csv
+
 ## Scripts
 
 Copy these scripts into the directory above the git project in question and its orphaned copy. The result of ls should be
